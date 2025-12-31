@@ -1,0 +1,75 @@
+version: "3.8"
+
+
+
+services:
+
+  site1:
+
+    image: nginx:stable-alpine
+
+    ports:
+
+      - "9001:80"
+
+    volumes:
+
+      - ./site1:/usr/share/nginx/html
+
+
+
+  site2:
+
+    image: nginx:stable-alpine
+
+    ports:
+
+      - "9002:80"
+
+    volumes:
+
+      - ./site2:/usr/share/nginx/html
+
+
+
+  site3:
+
+    image: nginx:stable-alpine
+
+    ports:
+
+      - "9003:80"
+
+    volumes:
+
+      - ./site3:/usr/share/nginx/html
+
+
+
+  site4:
+
+    image: nginx:stable-alpine
+
+    ports:
+
+      - "9004:80"
+
+    volumes:
+
+      - ./site4:/usr/share/nginx/html
+
+
+
+  site5:
+
+    image: nginx:stable-alpine
+
+    ports:
+
+      - "9005:80"
+
+    volumes:
+
+      - ./site5:/usr/share/nginx/html
+
+
